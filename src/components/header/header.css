@@ -1,0 +1,177 @@
+ .header{
+    background-color: #003580;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+ }
+
+ .headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+ }
+
+ .headerContainer.listMode{
+   margin: 20px 0px 0px 0px;
+ }
+
+ .headerList{
+    display: flex;
+    gap: 30px;
+    /* margin-left: 10px; */
+    margin-bottom: 20px;
+ }
+
+ .headerListItem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+ }
+
+ .headerListItem.active{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+ }
+
+ .headerTitle{
+    /* text-align: center; */
+    /* margin-left: 10px; */
+ }
+ .headerDesc{
+    margin: 20px 0px 20px 10px;
+    /* text-align: center; */
+ }
+
+ .headerBtn{
+    background-color:#0071c2;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin-left: 10px; */
+    font-weight: 500;
+    cursor: pointer;
+ }
+
+ .headerSearch{
+   height: 30px;
+   background-color: #fff;
+   border: 3px solid #febb02;
+   display: flex;
+   align-items: center;
+   color: black;
+   justify-content: space-around; 
+   padding: 10px 0px;
+   border-radius: 5px;
+   /* margin-left: 10px; */
+   position: absolute;
+   bottom: -25px;
+   max-width: 1024px;
+   width: 100%;
+ }
+
+ .headerIcon{
+   color: lightgray;
+ }
+
+ .headerSearchItem{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+ }
+
+ .headerSearchInput{
+   border: none;
+   outline: none;
+
+ }
+
+ .headerSearchText{
+   color: gray;
+   cursor: pointer;
+ }
+
+ .date{
+   position: absolute;
+   top: 50px; /* This 50px to allow it sit under the input box that had a height of 50px */
+   z-index: 2;
+
+}
+
+.option{
+   position: absolute;
+   top: 35px;
+   /* right: 100px; */
+   background-color: white;
+   border: 1px solid gray;
+   padding: 5px;
+   color: gray;
+   width: 200px;
+   border-radius: 10px;
+   bbox-shadow: -1px 38px 99px -2px rgba(0,0,0,0.24);
+   -webkit-box-shadow: -1px 38px 99px -2px rgba(0,0,0,0.24);
+   -moz-box-shadow: -1px 38px 99px -2px rgba(0,0,0,0.24);
+   z-index: 2 ;
+}
+
+.big{
+   position: relative;
+}
+
+.optionItem{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   margin: 10px;
+   
+}
+
+.optionCounter{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   font-size: 12px;
+   color: black;
+}
+
+.optionCounterButton{
+   width: 30px;
+   height: 30px;
+   border: 1px solid #0071c2;
+   border-radius: 5px;
+   color: #0071c2;
+   outline: none;
+   cursor: pointer;
+   background-color: white;
+
+}
+
+.optionCounterButton:disabled{
+   cursor: not-allowed;
+}
+
+@media only screen and (max-width: 700px) {
+   .headerContainer {
+     margin-left: 5px ;
+     margin-right: 5px ;
+   }
+
+   h1{
+      padding: 5px;
+   }
+
+   .headerList{
+      padding-left: 5px;
+      padding-right: 10px;
+   }
+
+   .headerBtn{
+      margin-left: 5px;
+   }
+ }

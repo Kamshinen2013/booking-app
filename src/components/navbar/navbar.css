@@ -1,0 +1,44 @@
+.navbar{
+    height: 50px;
+    background-color: #003580;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navContainer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.logo{
+    font-weight:700;
+    /* margin-left: 10px; */
+    font-size: 25px;
+}
+.navItems{
+    display: flex;
+    gap: 20px;   
+}
+
+.navButton{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #003580;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navContainer {
+      padding: 5px;
+    }
+  }
